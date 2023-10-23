@@ -1,1 +1,2 @@
 # rockPaperScissors
+A project from 'TheOdinProject' consisiting of the student creating a Rock, Paper, Scissors game. The user clicks on one of the three options and the computer has a function that generates a random output. 
