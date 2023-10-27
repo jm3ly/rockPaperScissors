@@ -9,39 +9,49 @@ function getComputerChoice () {
 }
 
 
-function playGame (userChoice, computerChoice) {
-    const userChoice = 'paper'
-    if (userChoice === computerChoice) {
-        return 'This game is a tie'
-    }
-    if (computerChoice === 'rock') {
-        if (userChoice === 'paper') {
-            return 'User has won!'
-        } else {
-            return 'Computer has won the game'
-        }
-    }
-    if (computerChoice === 'paper') {
-        if (userChoice === 'scissors') {
-            return 'User has won!'
-        } else {
-            return 'Computer has won the game'
-        }
-    }
-    if (computerChoice === 'scissors') {
-        if (userChoice === 'rock') {
-            return 'User has won!'
-        } else {
-            return 'Computer has won the game'
-        }
-    }
+/*function to get a choice from a user*/
+function getPlayerChoice (userInput) {
+    userInput = userInput/*.toLowerCase*/()
+    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+    return userInput 
+} else {console.log('ERROR! Type: rock, paper, or scissors!')}
 }
-const computerChoice = getComputerChoice()
-/*sconst userChoice = 'paper'*/
+
+/*function to determine the winner of the game*/
+function determineWinner(playerSelection, computerSelection) {
+    
+        if (computerSelection === playerSelection) {
+            return 'This game is a tie!';
+        } else if (computerSelection === 'rock') {
+            if (playerSelection === 'scissors') {
+                return 'Computer has won!';
+            } else {
+                return 'User has won!';
+            }
+        } else if (computerSelection === 'paper') {
+            if (playerSelection === 'rock') {
+                return 'Computer has won!';
+            } else {
+                return 'User has won!';
+            }
+        } else if (computerSelection === 'scissors') {
+            if (playerSelection === 'paper') {
+                return 'Computer has won!';
+            } else {
+                return 'User has won!';
+            }
+        }
+    }
+
+
+
+
+
+const computerSelection = getComputerChoice()
 
 console.log(getComputerChoice())
-/*console.log(userChoice)*/
-console.log(playGame(userChoice, computerChoice))
+console.log(getPlayerChoice())
+console.log(determineWinner(playerSelection, computerSelection))
 
 
 
@@ -91,3 +101,36 @@ function getPlayerChoice (userInput) {
 
 
 
+
+
+
+
+
+
+  /*function playGame (userChoice, computerChoice) {
+
+    if (userChoice === computerChoice) {
+        return 'This game is a tie'
+    }
+    if (computerChoice === 'rock') {
+        if (userChoice === 'paper') {
+            return 'User has won!'
+        } else {
+            return 'Computer has won the game'
+        }
+    }
+    if (computerChoice === 'paper') {
+        if (userChoice === 'scissors') {
+            return 'User has won!'
+        } else {
+            return 'Computer has won the game'
+        }
+    }
+    if (computerChoice === 'scissors') {
+        if (userChoice === 'rock') {
+            return 'User has won!'
+        } else {
+            return 'Computer has won the game'
+        }
+    }
+}*/
