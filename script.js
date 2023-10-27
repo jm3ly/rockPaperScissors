@@ -1,4 +1,4 @@
-/*function to get a choice from the computer*/
+/*Begin witha function that will randomly enter: Rock, Paper, or Scissors*/
 function getComputerChoice () {
     const randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
@@ -9,7 +9,8 @@ function getComputerChoice () {
 }
 
 
-/*function to play a single round of rock paper scissors*/
+/*Write a function that plays a single round of RPS. Has two parameters and
+returns a single string to declare a winner*/
 /*function playRound(playerSelection, computerSelection){
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection === computerSelection) {
@@ -25,7 +26,7 @@ function getComputerChoice () {
     }
 }*/
 
-/*function to play 5 games against the computer*/
+/*Same as previous function, changed name to 'playGame'*/
 function playGame(playerSelection, computerSelection){
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection === computerSelection) {
@@ -40,7 +41,7 @@ function playGame(playerSelection, computerSelection){
         return 'Computer has won the game';
     }
 }
-
+/* Create a loop that allows the user to play 5 rounds against the computer*/
 for (let i = 1; i <= 5; i++) {
     const playerSelection = prompt("Enter your choice (rock, paper, or scissors):");
     if (playerSelection !== 'rock' && playerSelection !== 'paper' && playerSelection !== 'scissors') {
@@ -54,10 +55,9 @@ for (let i = 1; i <= 5; i++) {
 }
 
 
-/*my console logs   
+/*CONSOLE LOGS*/   
 const playerSelection = 'paper';
 const computerSelection = getComputerChoice();
-
 console.log(playerSelection);
 console.log(computerSelection)
-console.log(playGame(playerSelection, computerSelection));*/
+console.log(playGame(playerSelection, computerSelection));
