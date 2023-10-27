@@ -56,8 +56,8 @@ for (let i = 1; i <= 5; i++) {
 
 
 /*CONSOLE LOGS*/   
-const playerSelection = 'paper';
+/*const playerSelection = 'paper';
 const computerSelection = getComputerChoice();
 console.log(playerSelection);
 console.log(computerSelection)
-console.log(playGame(playerSelection, computerSelection));
+console.log(playGame(playerSelection, computerSelection));*/
