@@ -12,7 +12,7 @@ function getComputerChoice () {
 /*Write a function that plays a single round of RPS. Has two parameters and
 returns a single string to declare a winner*/
 /*function playRound(playerSelection, computerSelection){
-    playerSelection = playerSelection.toLowerCase();
+    playerSelection = playerSelection.tsoLowerCase();
     if (playerSelection === computerSelection) {
         return 'This game is a tie';
     } else if (
@@ -57,7 +57,7 @@ for (let i = 1; i <= 5; i++) {
 
 /*CONSOLE LOGS*/   
 /*const playerSelection = 'paper';
-const computerSelection = getComputerChoice();
+const computerSelection =s getComputerChoice();s
 console.log(playerSelection);
 console.log(computerSelection)
-console.log(playGame(playerSelection, computerSelection));*/
+console.log(playGame(playerSelection, computerSelection));*/s
