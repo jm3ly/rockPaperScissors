@@ -1,4 +1,7 @@
-/*Begin witha function that will randomly enter: Rock, Paper, or Scissors*/
+
+
+
+/*Begin with a function that will randomly enter: Rock, Paper, or Scissors*/
 function getComputerChoice () {
     const randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
@@ -41,7 +44,7 @@ function playGame(playerSelection, computerSelection){
         return 'Computer has won the game';
     }
 }
-/* Create a loop that allows the user to play 5 rounds against the computer*/
+/* Create a loop that allows the user to play 5 rounds against the computer
 for (let i = 1; i <= 5; i++) {
     const playerSelection = prompt("Enter your choice (rock, paper, or scissors):");
     if (playerSelection !== 'rock' && playerSelection !== 'paper' && playerSelection !== 'scissors') {
@@ -52,7 +55,7 @@ for (let i = 1; i <= 5; i++) {
 
     console.log(`Game ${i}: Player chose ${playerSelection} and Computer chose ${computerSelection}`);
     console.log(playGame(playerSelection, computerSelection));
-}
+}*/
 
 
 /*CONSOLE LOGS*/   
@@ -60,4 +63,4 @@ for (let i = 1; i <= 5; i++) {
 const computerSelection =s getComputerChoice();s
 console.log(playerSelection);
 console.log(computerSelection)
-console.log(playGame(playerSelection, computerSelection));*/s
+console.log(playGame(playerSelection, computerSelection));*/
