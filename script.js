@@ -64,3 +64,24 @@ const computerSelection =s getComputerChoice();s
 console.log(playerSelection);
 console.log(computerSelection)
 console.log(playGame(playerSelection, computerSelection));*/
+
+//event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('rockBtn').addEventListener('click', function() {
+        const playerSelection = 'rock';
+        const computerSelection = getComputerChoice();
+        console.log(playGame(playerSelection, computerSelection));
+    });
+
+    document.getElementById('paperBtn').addEventListener('click', function() {
+        const playerSelection = 'paper';
+        const computerSelection = getComputerChoice();
+        console.log(playGame(playerSelection, computerSelection));
+    });
+
+    document.getElementById('scissorsBtn').addEventListener('click', function() {
+        const playerSelection = 'scissors';
+        const computerSelection = getComputerChoice();
+        console.log(playGame(playerSelection, computerSelection));
+    });
+});
